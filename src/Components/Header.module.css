@@ -1,0 +1,135 @@
+.header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: rgb(255, 234, 235);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.left__option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+
+.brand h3 span {
+  color: red;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav a {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+nav a.active {
+  color: red;
+}
+
+.right__options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.right__options button {
+  padding: 7px 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+.cart__btn {
+  background: transparent;
+  color: black;
+}
+
+.signup__btn {
+  color: white;
+  background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: rgb(255, 234, 235);
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .left__option {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .brand h3 span {
+    color: red;
+  }
+
+  .right__options {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .right__options button {
+    padding: 7px 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 20px;
+  }
+
+  .cart__btn {
+    background: transparent;
+    color: black;
+  }
+
+  .signup__btn {
+    color: white;
+    background-color: red;
+  }
+}

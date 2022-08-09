@@ -1,0 +1,74 @@
+/* CARD WRAPPER */
+
+.card__wrapper {
+  width: 100%;
+  padding: 50px 150px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  width: 190px;
+  height: 150px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-color: rgba(250, 218, 223, 0.473);
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(99, 99, 99, 0.39);
+  cursor: pointer;
+  transition: transform 0.25s linear;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card__img {
+  position: absolute;
+  top: -60px;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: dodgerblue;
+  box-shadow: 0 3px 5px rgba(99, 99, 99, 0.39);
+  overflow: hidden;
+}
+
+.card__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.card__details {
+  margin-top: 50px;
+}
+
+.card__details h4 {
+  font-weight: 500;
+  margin-bottom: 9px;
+  width: 170px;
+  text-align: center;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__details p {
+  font-size: 15px;
+  font-weight: 700;
+  width: 180px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
